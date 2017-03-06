@@ -1,0 +1,32 @@
+/***********************
+    SLIDER STYLES
+***********************/
+#slick-slider {
+    margin: 0 auto;
+    padding: 40px;
+    width: calc(100vw - 3em);
+    min-height: calc(100vh - 3em);
+    color: #333;
+    background: #419be0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-for {}
+
+.slider-nav {
+    position: relative;
+    top: 5em;
+}
+
+.featured-video {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+.nav-video {
+    width: 400px;
+    height: 200px;
+}
