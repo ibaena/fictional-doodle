@@ -1,0 +1,81 @@
+/********************************
+       HEADER STYLES
+********************************/
+#intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    video#bgvid {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background: url("polina.jpg") no-repeat;
+        background-size: cover;
+        -webkit-filter: grayscale(86%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(86%);
+    }
+
+    .center-box {
+        text-align: center;
+
+        .intro-header {
+            font-size: 56px;
+            color: white;
+            font-family: 'Cutive Mono', monospace;
+            margin: 0;
+
+            .red-f {
+                color: red;
+                font-size: 64px;
+                font-family: 'Cutive Mono', monospace;
+            }
+        }
+
+        .intro-text {
+            color: white;
+            font-family: 'Cutive Mono', monospace;
+
+            .center-rule {
+                border-color: white;
+                display: inline-block;
+                width: 80px;
+                margin: 10px;
+            }
+        }
+
+        #enter-btn {
+            border: 1px solid white;
+            padding: 1em;
+            color: white;
+            text-decoration: none;
+            font-family: 'Cutive Mono', monospace;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        #enter-btn:hover {
+            text-decoration: line-through;
+            background-color: white;
+            color: black;
+            transition: all 0.4s ease-in;
+        }
+    }
+    #footer {
+      background: transparent;
+      border-top-color: rgba(255,255,255,.1);
+      color:white;
+      font-family: 'Cutive Mono', monospace;
+    }
+}
