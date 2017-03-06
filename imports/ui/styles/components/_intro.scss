@@ -7,12 +7,34 @@
     flex-direction: column;
     justify-content: center;
 
+    #sound-control {
+        background: rgba(255,255,255,.1);
+        color: white;
+        font-size: 12px;
+        position: fixed;
+        top: 35px;
+        right: 50px;
+        text-align: center;
+        cursor: pointer;
+        list-style-type: none;
+        padding: 1em;
+
+        .volume-item {
+          display:inline;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .v-off {
+          color:rgba(255, 255, 255, .3);
+        }
+    }
+
     video#bgvid {
         position: fixed;
         top: 50%;
         left: 50%;
-        min-width: 100%;
-        min-height: 100%;
+        min-width: 95%;
+        min-height: 95%;
         width: auto;
         height: auto;
         z-index: -100;
@@ -22,9 +44,9 @@
         transform: translateX(-50%) translateY(-50%);
         background: url("polina.jpg") no-repeat;
         background-size: cover;
-        -webkit-filter: grayscale(86%);
+        -webkit-filter: grayscale(92%);
         /* Safari 6.0 - 9.0 */
-        filter: grayscale(86%);
+        filter: grayscale(92%);
     }
 
     .center-box {
@@ -54,6 +76,10 @@
                 margin: 10px;
             }
         }
+        #sub-head {
+          font-size: 17px;
+          letter-spacing: 1px;
+        }
 
         #enter-btn {
             border: 1px solid white;
@@ -72,10 +98,22 @@
             transition: all 0.4s ease-in;
         }
     }
+
     #footer {
-      background: transparent;
-      border-top-color: rgba(255,255,255,.1);
-      color:white;
-      font-family: 'Cutive Mono', monospace;
+        background: rgba(0,0,0,.2);
+        border-top-color: rgba(255,255,255,.1);
+        color: white;
+        font-family: 'Cutive Mono', monospace;
+
+        #right-footer {
+            text-align: right;
+            font-size: 36px;
+            font-family: 'Cutive Mono', monospace;
+        }
+
+        #left-footer {
+            font-size: 36px;
+            text-align: left;
+        }
     }
 }
